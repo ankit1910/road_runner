@@ -7,5 +7,5 @@ class Driver < ActiveRecord::Base
   belongs_to :city
   belongs_to :company
   has_many :assignments
-  has_many :deliveries, -> { order(position: :asc) }, through: :assignments
+  has_many :deliveries, through: :assignments
 end
