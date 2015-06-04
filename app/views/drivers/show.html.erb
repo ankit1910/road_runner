@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @driver.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @driver.age %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @driver.city %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @driver.company %>
+</p>
+
+<%= link_to 'Edit', edit_driver_path(@driver) %> |
+<%= link_to 'Back', drivers_path %>

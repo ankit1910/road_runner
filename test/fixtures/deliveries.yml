@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  package_number: 1
+  company_id: 
+  city_id: 
+  status: 1
+  date_of_delivery: 2015-05-18 19:11:05
+  address: MyString
+
+two:
+  package_number: 1
+  company_id: 
+  city_id: 
+  status: 1
+  date_of_delivery: 2015-05-18 19:11:05
+  address: MyString
