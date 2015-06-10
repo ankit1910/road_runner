@@ -15,7 +15,6 @@ default: &default
   pool: 5
   username: root
   password: vinsol
-  socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -50,5 +49,3 @@ test:
 production:
   <<: *default
   database: road_runner_production
-  username: road_runner
-  password: <%= ENV['ROAD_RUNNER_DATABASE_PASSWORD'] %>
