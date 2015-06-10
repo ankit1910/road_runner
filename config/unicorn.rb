@@ -34,7 +34,6 @@ before_fork do |server, worker|
   end
 
   if defined?(ActiveRecord::Base)
-    ActiveRecord::Base.connection_proxy.instance_variable_get(:@shards).each_value(&:disconnect!) if is_production
     ActiveRecord::Base.connection.disconnect!
   end
 
@@ -57,6 +56,5 @@ after_fork do |server, worker|
 
   if defined?(ActiveRecord::Base)
     ActiveRecord::Base.establish_connection
-    ActiveRecord::Base.connection_proxy.instance_variable_get(:@shards).each_value(&:clear_reloadable_connections!) if is_production
   end
 end
