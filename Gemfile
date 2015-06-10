@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails',                    '4.1.10'
 gem 'mysql2'
 gem 'sass-rails',               '~> 4.0.3'
@@ -15,16 +14,10 @@ gem 'rack-cors'
 gem 'active_model_serializers', '0.9.2'
 gem 'pusher'
 gem 'byebug',                               group: [:development, :test]
+gem 'capistrano-rails',                     group: :development
+gem 'unicorn'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 
