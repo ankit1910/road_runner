@@ -92,7 +92,8 @@ class DriversController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_driver
-      @driver = Driver.find_by(id: params[:driver_id])
+      id = params[:driver_id] || params[:id]
+      @driver = Driver.find_by(id: id)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
